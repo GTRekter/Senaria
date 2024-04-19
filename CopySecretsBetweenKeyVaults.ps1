@@ -5,7 +5,7 @@ param (
     [Parameter(Mandatory = $true)]
     [string]$destination_keyvault,
 
-    [string[]]$exclude_secrets = @("uat-euw-mwi-redis-merlin-primary-connection-string","uat-euw-mwi-sql-group1-merlin-password", "uat-euw-mwi-sql-group1-merlin-username", "uat-euw-mwi-sql-group2-merlin-password", "uat-euw-mwi-sql-group2-merlin-username")
+    [string[]]$exclude_secrets = @("")
 )
 
 function Is-SecretExcluded {
